@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "react": "^19.2.0",
+    "react-router-dom": "^7.9.6"
+  },
+  "name": "fakebaseball",
+  "version": "1.0.0",
+  "description": "* Web server setup\r * HTML\r * CSS\r * JavaScript and Web Frameworks\r     * HTML/CSS components and routing\r     * reactivity\r * HTTP service\r * data and authentication services\r * websocket\r * Security",
+  "main": "index.js",
+  "devDependencies": {
+    "vite": "^7.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peppermint6443/fakebaseball.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Peppermint6443/fakebaseball/issues"
+  },
+  "homepage": "https://github.com/Peppermint6443/fakebaseball#readme"
+}
