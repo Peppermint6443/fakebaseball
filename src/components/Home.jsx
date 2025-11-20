@@ -9,6 +9,14 @@ export default function Home() {
     const teamSelected = !!team;
 
     React.useEffect(() => {
+        // Refresh backend player data ONCE when page loads
+        fetch("http://localhost:8000/api/refresh")
+            .then(res => res.json())
+            .then(data => console.log("Refreshed:", data))
+            .catch(err => console.error("Refresh error:", err));
+    }, []);  // empty dependency array = runs only once
+
+    React.useEffect(() => {
         if (!team) {
             setTeamPlayers([]);
             setPlayer('');
