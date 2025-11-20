@@ -15,6 +15,7 @@ app.add_middleware(
 
 
 players = None
+player_data = None
 
 def refresh_data():
     global players
@@ -31,3 +32,9 @@ async def get_players(team: str):
     # print(players_filtered)
     # print("data:", players_filtered['playerName'].to_list())
     return {"data": players_filtered['playerName'].to_list()}
+
+@app.get('/api/player')
+async def get_player_data(name: str):
+    global player_data
+    player_data = rq.get(f'https://www.rslashfakebaseball.com/api/plateappearances/pitching/league/{name}').json()
+    return {'pull success': True}
