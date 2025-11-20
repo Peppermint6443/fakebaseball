@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-// import Home from './components/Home';
+import Home from './components/Home';
 // import Player from './components/Player';
 
 import './app.css';
@@ -20,13 +20,13 @@ export default function App() {
                     </nav>
                 </header>
 
-                {/* <Routes>
+                <Routes>
                     <Route 
                         path = '/'
                         element = {<Home/>}
                     />
-                    <Route path = '/player_page' element = {<Player/>}/>
-                </Routes> */}
+                    {/* <Route path = '/player_page' element = {<Player/>}/> */}
+                </Routes>
 
                 <footer>
                     <span>Author: u/shruggingemoji64 (Reddit), Silicon1464 (Discord)</span>
